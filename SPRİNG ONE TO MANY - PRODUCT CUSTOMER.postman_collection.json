@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "617166e7-31b3-421b-b886-6a5ad710c5e7",
+		"name": "SPRİNG ONE TO MANY - PRODUCT CUSTOMER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41724449"
+	},
+	"item": [
+		{
+			"name": "CUSTOMER SAVE - POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Batuhan\",\n  \"lastName\": \"Yalçın\",\n  \"order\": \"Laptop\",\n  \"product\": [\n    {\n      \"name\": \"MacBook Pro\",\n      \"productNo\": 101\n    },\n    {\n      \"name\": \"Dell XPS\",\n      \"productNo\": 102\n    },\n    {\n      \"name\": \"Monster Tulpar T7 V20.5\",\n      \"productNo\": 103\n    }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/api/customer/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"customer",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ALLCUSTOMERLİST - GET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID - GET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE CUSTOMER - DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE CUSTOMER - PUT",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

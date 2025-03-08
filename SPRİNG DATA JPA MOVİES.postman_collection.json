@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "caacaf0a-e8b0-4dc2-b054-f91c6ae5178f",
+		"name": "SPRİNG DATA JPA MOVİES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41724449"
+	},
+	"item": [
+		{
+			"name": "SAVE - POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Kurtlar Vadisi\",\n    \"year\" : 20155,\n    \"revenue\" : 957.500,\n    \"genre\" : \"Aksiyon\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/rest/api/movies/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"rest",
+						"api",
+						"movies",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetbyId - GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/rest/api/movies/list/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"rest",
+						"api",
+						"movies",
+						"list",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllList - GET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Movies Delete - DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/rest/api/movies/delete/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"rest",
+						"api",
+						"movies",
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE - PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Oğlan Bizim Kız Bizim\",\n    \"year\" : 2015,\n    \"revenue\" : 350.872,\n    \"genre\" : \"Romantik Komedi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/rest/api/movies/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"rest",
+						"api",
+						"movies",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
