@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "1bdc7f22-6018-4603-83e8-ec49ca79b374",
+		"name": "CAR BRAND MANY TO ONE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41724449"
+	},
+	"item": [
+		{
+			"name": "SAVE - POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Batuhan Yalçın\",\r\n    \"model\" : \"5.25\",\r\n    \"price\" : 900000,\r\n    \"owner\" : \"Batuhan Bey\",\r\n    \"brand\" : [\r\n        {\r\n            \"brand\" : \"BMW\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/api/car/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"car",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ALL LİST - GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/api/car/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"car",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FİND BY ID - GET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE CAR - DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE - PUT",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
